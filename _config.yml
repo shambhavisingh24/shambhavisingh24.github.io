@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Shambhavi Singh"
   avatar : "/assets/image/IMG-20201102-WA0047-2.jpg"
-  bio    : "When I am not analysing, I like to read, make art and talk to my plants."
+  bio    : "Data. Books. Art."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -70,7 +70,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/shambhawe"
     - label: "Tableau"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-tableau"
       url: "https://public.tableau.com/profile/shambhavi.singh4327#!/"
 
 footer:
