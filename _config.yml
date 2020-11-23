@@ -59,6 +59,7 @@ author:
   name   : "Shambhavi Singh"
   avatar : "/assets/image/IMG-20201102-WA0047-2.jpg"
   bio    : "Data. Books. Art."
+  location : "Hyderabad, India"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -94,6 +95,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
