@@ -64,7 +64,6 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/notshambhavi"
-      .fa {color : black;}
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shambhavisingh24"
@@ -83,8 +82,7 @@ footer:
    - label: "Email"
       icon: "fas fa-envelope-open-text"
       url: "mailto: shambhavi.singh2014@gmail.com"
-    
-
+      
 defaults:
   # _posts
   - scope:
