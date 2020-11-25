@@ -7,12 +7,12 @@
   .fal {
     color: $text-color;
   }
-  .fa-linkedin,
+  /*.fa-linkedin,
   .fa-linkedin-in {
-    color: black;
-  }
+   color: black;
+  }*/
 
   .fa-twitter-square {
-    color: black;
+    color: #000000;
   }
 }
