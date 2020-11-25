@@ -14,10 +14,11 @@ When I'm not working on meeting deadlines, I'm either working on [side projects]
 Here's some of what I'm doing these days:
 - **Current Academic Side Project:** Making this website!
 - **Currently Reading**: _A Suitable Boy_ by Vikram Seth(hoping to this finish this by end of this year). Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
-- **Currently obsessively listening**: Lucky Ali. Find my spotify [here] (https://open.spotify.com/user/31jtu55hrzw5qhjtzlleokpy556i)
+- **Currently obsessively listening**: Lucky Ali! <3 Find my spotify [here](https://open.spotify.com/user/31jtu55hrzw5qhjtzlleokpy556i)
+
 ---------------------
 
 Connect with me on my social medias:
-- [**Linkedin:**] (https://www.linkedin.com/in/shambhavi-singh-995096144/)
-- [**Instagram:**] (https://www.instagram.com/shambhawe/)
-- [**Twitter:**](https://twitter.com/notshambhavi)
+- [Linkedin](https://www.linkedin.com/in/shambhavi-singh-995096144/)
+- [Instagram](https://www.instagram.com/shambhawe/)
+- [Twitter](https://twitter.com/notshambhavi)
