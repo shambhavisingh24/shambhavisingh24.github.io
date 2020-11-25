@@ -79,9 +79,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shambhavisingh24"
-   - label: "Email"
-      icon: "fas fa-envelope-open-text"
-      url: "mailto: shambhavi.singh2014@gmail.com"
       
 defaults:
   # _posts
