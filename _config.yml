@@ -29,11 +29,10 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
-  - pages_
-  - posts_
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -55,6 +54,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
 
 author:
   name   : "Shambhavi Singh"
@@ -93,7 +93,6 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date: true
   # _pages
   - scope:
       path: "_pages"
