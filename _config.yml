@@ -16,7 +16,7 @@
 title: Shambhavi Singh
 email: shambhavi.singh2014@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Data Analysis
+  Personal Website
 twitter_username: notshambhavi
 github_username: shambhavisingh24
 minimal_mistakes_skin: "contrast"
@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Shambhavi Singh"
   avatar : "/assets/image/IMG-20201102-WA0047-2.jpg"
-  bio    : "Data. Books. Art."
+  bio    : "Analyst in the streets, reader in the sheets"
   location : "Hyderabad, India"
   links:
     - label: "Twitter"
@@ -68,7 +68,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shambhavisingh24"
-    - label: "Email"
+    - label: "Get in touch"
       icon: "fas fa-envelope-open-text"
       url: "mailto: shambhavi.singh2014@gmail.com"
 
