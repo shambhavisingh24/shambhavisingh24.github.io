@@ -1,7 +1,11 @@
 ---
 title: "Hello World!"
+date: 2020-12-01T15:34:30-04:00
 categories:
   - general
+tags:
+  - update
+
 ---
 ## Hey there!
 ### Thanks for visiting my website! This is my first post, and I want to outline what I'm trying to achieve with this website. 
