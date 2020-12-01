@@ -1,9 +1,27 @@
 ---
 permalink: /about/
 title: "About"
+author profile: false
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/assets/image/IMG-20201102-WA0047-2.jpg" alt="" align="right">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/image/me2.jpg" alt="" align="right">
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I'm Shambhavi, a data analyst at ICICI Bank. I have done my undergrad in Mathematics from St. Stephen's College, University of Delhi. I have deep interest in data analysis and visualization. I am interested in doing data analysis/visualization for NGOs, charities, non-profits (#DataForGood).
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+------------------
+
+When I'm not working on meeting deadlines, I'm either working on side projects, reading, talking to my plants, or making some art. 
+
+---------------------
+
+Here's some of what I'm doing these days:
+- **Current side project:** Making this website!
+- **Currently reading**: _A Suitable Boy_ by Vikram Seth(hoping to this finish this by end of this year). Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
+- **Currently learning**: Introduction to Machine Learning, You can find the course [here](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/course/)
+
+---------------------
+
+Connect with me on my social medias:
+- [Linkedin](https://www.linkedin.com/in/shambhavi-singh-995096144/)
+- [Instagram](https://www.instagram.com/shambhawe/)
+- [Twitter](https://twitter.com/notshambhavi)
+
