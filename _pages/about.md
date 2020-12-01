@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 author profile: false
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/assets/image/me2.jpg" alt="" align="right">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/image/me2.jpeg" alt="" align="right">
 
 I'm Shambhavi, a data analyst at ICICI Bank. I have done my undergrad in Mathematics from St. Stephen's College, University of Delhi. I have deep interest in data analysis and visualization. I am interested in doing data analysis/visualization for NGOs, charities, non-profits (#DataForGood).
 
