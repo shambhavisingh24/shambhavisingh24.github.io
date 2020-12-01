@@ -22,6 +22,6 @@ Here's some of what I'm doing these days:
 
 Connect with me on my social medias:
 - [Linkedin](https://www.linkedin.com/in/shambhavi-singh-995096144/)
-- [Instagram](https://www.instagram.com/shambhawe/)
+- [Tableau Public](https://public.tableau.com/profile/shambhavi.singh4327#!/)
 - [Twitter](https://twitter.com/notshambhavi)
 
