@@ -7,6 +7,7 @@ tags:
   - update
 
 ---
+<img src="{{ site.url }}{{ site.baseurl }}/assets/image/3255469.jpg" alt="" align="top">
 ## Hey there!
 ### Thanks for visiting my website! This is my first post, and I want to outline what I'm trying to achieve with this website. 
 
