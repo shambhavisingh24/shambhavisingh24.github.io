@@ -145,3 +145,8 @@ Also, some points to note:
 
 So, considering the graph where would you choose to live?
 
+---
+
+*See you soon for a new post!*
+
+*Thanks for reading! You can always [email me](mailto:shambhavi.singh2014@gmail.com) to chat about this post - or anything else.*
