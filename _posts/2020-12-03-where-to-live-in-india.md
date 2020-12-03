@@ -51,4 +51,92 @@ Please load the riem package before using riem_measure. Also, while getting the 
 
 -----
 
+**DATA MANIPULATION**
+
+All the temperatures in data are stored in Fahrenheit, hence we convert it into Celsius using the **convert_temperature()** function in the **weathermetrics package**, and **mutate** from dplyr. Here the variable **tmpf** signifies air temperature in Fahrenheit, **dwpf** signifies dew point temperature in Fahrenheit. You find the meaning of different variables from this [website](https://docs.ropensci.org/riem/articles/riem.html).
+
+```
+library(weathermetrics)
+summer_weather <- summer_weather %> 
+mutate(tmpc=convert_temperature(tmpf, 
+old_metric = "f", new_metric="c"), 
+dwpc = convert_temperature(dwpf, old_metric = "f", new_metric = "c"))
+winter_weather <- winter_weather %>% 
+mutate(tmpc = convert_temperature(tmpf, 
+old_metric = "f", new_metric = "c"))
+```
+
+In the xkcd comic, the author uses [Humidex](https://en.wikipedia.org/wiki/Humidex)(how hot the weather feels to the average person, by combining the effect of heat and humidity) to define summer values, and average temperature for winter.
+We can then calculate the humidex with the **calcHumx()** function from the comf package!
+The formula for the same is:
+<image>
+
+The interpretation of the humidex is as follows:
+->20–29: Little to no discomfort
+->30–39: Some discomfort
+->40–45: Great discomfort (avoid exertion)
+->45+ : Dangerous (possibility of heat stroke)
+
+```
+library(comf)
+summer_weather <- summer_weather %>% 
+mutate(humidex = calcHumx(ta = tmpc, rh = relh))
+```
+
+Now, we use **group_by()** and **summarize()** function from dplyr package to make a new data frame with humidex for summer, and average temperature for winter, for every airport.
+
+```
+summer_data <- summer_weather %>% 
+group_by(station) %>% 
+summarize(summer_humidex = mean(humidex, na.rm =TRUE))
+winter_data <- winter_weather %>% 
+group_by(station) %>% 
+summarize(winter_avg_temp = mean(tmpc, na.rm = TRUE))
+```
+
+----
+
+**DATA FOR PLOTTING**
+
+We are getting close to the final goal. The penultimate step is to prepare the data for plotting. We join summer and winter data together using the **left_join()** function from dplyr package. Then, we join with the indian_aiprorts data set to add in city names to airport code data set, combine them by the airport ICAO code.
+
+And with this our data is ready!
+
+---
+**FINALLY, PLOTTING!**
+
+We use **ggplot2** package to make the graph. We also use **ggrepel** pacakage to repel overlapping text labels.
+
+```
+climate_india %>%
+ggplot(aes(summer_humidex, winter_avg_temp))+geom_point()+
+ggtitle("Where to live based on your temperature preferences", subtitle="Data from airport weather stations, 2018-2019")+
+geom_text_repel(aes(label=Municipality), max.iter=50000)+
+xlab("summer heat and humidity via humidex")+
+ylab("winter temperature in celsius degree")
+```
+
+<first graph>
+
+Since this post was inspired by xkcd, it only made sense to convert the text in this into xkcd font.
+
+```
+climate_india %>%
+ggplot(aes(summer_humidex, winter_avg_temp))+
+geom_point()+
+ggtitle("Where to live based on your temperature preferences", subtitle="Data from airport weather stations, 2018-2019")+
+geom_text_repel(aes(label=Municipality), max.iter=50000)+
+xlab("summer heat and humidity via humidex")+
+ylab("winter temperature in celsius degree")+
+theme(text = element_text(size =16, family = "xkcd"))
+```
+
+<final graph>
+
+I didn’t use xkcd theme, because I liked the background. 
+Also, some points to note:
+1.Some of the cities like New Delhi should be more on the right on x-axis, based on personal experience(it is much more humid and hot there!). I think the values came out little less because we used weather data from airport, and not actual data.
+2.Pune is missing in the plot, because it was not present in riem data set. See, if you can find more cities that are missing?
+3.I have only considered data for a year, but considering more than that would result in a more accurate graph. Maybe, it might solve the problem mentioned in point number one.
+So, considering the graph where would you choose to live?
 
