@@ -5,6 +5,7 @@ categories:
   - projects
 tags:
   - R
+  - xkcd
 
 ---
 
