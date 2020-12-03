@@ -15,7 +15,7 @@ Once I started working full time, post my undergrad, I have had a feeling that I
 
 I want this website to be a catch-all landing page for anything and everything that I make and put on the internet. For instance, I want to use the website to be a home to:
 - **a blog** where I can dump some of my thoughts from time to time
-- **all side projects**, including source code and documentation
+- **all side projects**, including source code and documentation, you can find my side projects [here](https://shambhavisingh24.github.io/categories/#projects)
 - **anything else** that I end up making/working on that doesn't fall under the other categories
 
 I'm excited for what the future holds :)
