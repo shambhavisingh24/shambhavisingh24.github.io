@@ -21,10 +21,13 @@ My main reasons for using this package was:
 
 I didn’t know what the code was to access weather data of Indian airports, hence I used **riem_networks** command to do it.
 
-```data <- riem_networks
+
+```
+data <- riem_networks
 library(dplyr)
 data %>% filter(name == "India ASOS")
 ```
+
 
 Running this we find that code for India is **“IN__ASOS”**. To see the different airports in India we use **riem_stations** command. Using the command, we see that there are 96 airports in the Indian network, I am sure that India has more airports but for the sake of this project we will only consider these. Also, from the id column we see that airports are coded in the ICAOstandard rather than the IATA standard.
 
@@ -39,12 +42,14 @@ I checked this Wikipedia page, to see how summer and winter are defined by the I
 
 -**Summer** lasts from March to May
 
+
 ```library(purrr)
 summer_weather <- map_df(indian_airports$ICAO, riem_measures, date_start = "2019-03-01", date_end = "2019-05-31")
 View(summer_weather)
 winter_weather <- map_df(indian_airports$ICAO, riem_measures, date_start = "2018-12-01", date_end = "2019-02-28")
 View(winter_weather)
 ```
+
 
 The result is two gigantic datasets of around 175,180 observations each along with 31 variables ranging from dew point temperature, wind direction in degrees from north, relative humidity, and many more!
 Please load the riem package before using riem_measure. Also, while getting the winter data don’t forget to put previous year in date_start, or else you will get error!
@@ -77,11 +82,13 @@ The interpretation of the humidex is as follows:
 ->40–45: Great discomfort (avoid exertion)
 ->45+ : Dangerous (possibility of heat stroke)
 
+
 ```
 library(comf)
 summer_weather <- summer_weather %>% 
 mutate(humidex = calcHumx(ta = tmpc, rh = relh))
 ```
+
 
 Now, we use **group_by()** and **summarize()** function from dplyr package to make a new data frame with humidex for summer, and average temperature for winter, for every airport.
 
@@ -94,7 +101,7 @@ group_by(station) %>%
 summarize(winter_avg_temp = mean(tmpc, na.rm = TRUE))
 ```
 
-----
+------
 
 **DATA FOR PLOTTING**
 
@@ -102,10 +109,12 @@ We are getting close to the final goal. The penultimate step is to prepare the d
 
 And with this our data is ready!
 
----
+-------
+
 **FINALLY, PLOTTING!**
 
 We use **ggplot2** package to make the graph. We also use **ggrepel** pacakage to repel overlapping text labels.
+
 
 ```
 climate_india %>%
@@ -116,9 +125,12 @@ xlab("summer heat and humidity via humidex")+
 ylab("winter temperature in celsius degree")
 ```
 
+
 <first graph>
 
 Since this post was inspired by xkcd, it only made sense to convert the text in this into xkcd font.
+
+
 
 ```
 climate_india %>%
