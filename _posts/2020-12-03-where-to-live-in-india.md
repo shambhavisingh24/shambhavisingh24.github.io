@@ -77,12 +77,15 @@ We can then calculate the humidex with the **calcHumx()** function from the comf
 The formula for the same is:
 
 ![formula]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/formula_humidex.png)
-*Source:Wikipedia*
+
 
 The interpretation of the humidex is as follows:
 ->20–29: Little to no discomfort
+
 ->30–39: Some discomfort
+
 ->40–45: Great discomfort (avoid exertion)
+
 ->45+ : Dangerous (possibility of heat stroke)
 
 
@@ -133,7 +136,7 @@ ylab("winter temperature in celsius degree")
 
 
 ![graph]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/graph1.png)
-*Graph:where to live in india*
+
 
 
 Since this post was inspired by xkcd, it only made sense to convert the text in this into xkcd font.
@@ -152,7 +155,6 @@ theme(text = element_text(size =16, family = "xkcd"))
 ```
 
 ![xkcd graph]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/final_graph.png)
-*Graph:where to live in india(xkcd version)*
 
 
 I didn’t use xkcd theme, because I liked the background. 
