@@ -164,7 +164,7 @@ Also, some points to note:
 
 1.Some of the cities like New Delhi should be more on the right on x-axis, based on personal experience(it is much more humid and hot there!). I think the values came out little less because we used weather data from airport, and not actual data.
 
-2.Pune is missing in the plot, because it was not present in riem data set. See, if you can find more cities that are missing?
+2.Pune is missing in the plot, because it was not present in riem data set. See, if you can find anymore cities that are missing
 
 3.I have only considered data for a year, but considering more than that would result in a more accurate graph. Maybe, it might solve the problem mentioned in point number one.
 
