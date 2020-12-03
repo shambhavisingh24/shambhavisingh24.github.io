@@ -75,7 +75,8 @@ In the xkcd comic, the author uses [Humidex](https://en.wikipedia.org/wiki/Humid
 We can then calculate the humidex with the **calcHumx()** function from the comf package!
 The formula for the same is:
 
-![formula]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/formula_humidex.png)
+<img src="{{ site.url }}{{ site.baseurl }}assets/image/wheretolive/formula_humidex.png" alt="">
+
 
 The interpretation of the humidex is as follows:
 ->20–29: Little to no discomfort
@@ -93,6 +94,7 @@ mutate(humidex = calcHumx(ta = tmpc, rh = relh))
 
 Now, we use **group_by()** and **summarize()** function from dplyr package to make a new data frame with humidex for summer, and average temperature for winter, for every airport.
 
+
 ```
 summer_data <- summer_weather %>% 
 group_by(station) %>% 
@@ -101,6 +103,7 @@ winter_data <- winter_weather %>%
 group_by(station) %>% 
 summarize(winter_avg_temp = mean(tmpc, na.rm = TRUE))
 ```
+
 
 ------
 
