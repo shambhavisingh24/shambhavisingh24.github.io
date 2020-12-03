@@ -9,7 +9,7 @@ I'm Shambhavi, a data analyst at ICICI Bank. I have done my undergrad in Mathema
 
 ------------------
 
-When I'm not working on meeting deadlines, I'm either working on side projects, reading, or talking to my plants. 
+When I'm not working on meeting deadlines, I'm either working on [side projects](https://shambhavisingh24.github.io/categories/#projects), reading, or talking to my plants. 
 
 ---------------------
 
