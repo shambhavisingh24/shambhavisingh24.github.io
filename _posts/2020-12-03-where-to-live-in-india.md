@@ -77,11 +77,8 @@ In the xkcd comic, the author uses [Humidex](https://en.wikipedia.org/wiki/Humid
 We can then calculate the humidex with the **calcHumx()** function from the comf package!
 The formula for the same is:
 
-
-<figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/formula_humidex.png" alt="formula">
-  <figcaption>Source: Wikipedia.</figcaption>
-</figure>
+![formula]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/formula_humidex.png)
+*Source:Wikipedia*
 
 The interpretation of the humidex is as follows:
 ->20–29: Little to no discomfort
@@ -137,6 +134,8 @@ ylab("winter temperature in celsius degree")
 
 
 ![graph]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/graph1.png)
+*Graph:where to live in india*
+
 
 Since this post was inspired by xkcd, it only made sense to convert the text in this into xkcd font.
 
@@ -154,6 +153,8 @@ theme(text = element_text(size =16, family = "xkcd"))
 ```
 
 ![xkcd graph]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/final_graph.png)
+*Graph:where to live in india(xkcd version)*
+
 
 I didn’t use xkcd theme, because I liked the background. 
 
