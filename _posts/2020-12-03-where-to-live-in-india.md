@@ -74,7 +74,8 @@ old_metric = "f", new_metric = "c"))
 In the xkcd comic, the author uses [Humidex](https://en.wikipedia.org/wiki/Humidex)(how hot the weather feels to the average person, by combining the effect of heat and humidity) to define summer values, and average temperature for winter.
 We can then calculate the humidex with the **calcHumx()** function from the comf package!
 The formula for the same is:
-<image>
+
+![formula](assets/image/wheretolive/formula_humidex.png)
 
 The interpretation of the humidex is as follows:
 ->20–29: Little to no discomfort
@@ -126,7 +127,7 @@ ylab("winter temperature in celsius degree")
 ```
 
 
-<first graph>
+![graph](assets/image/wheretolive/graph1.png)
 
 Since this post was inspired by xkcd, it only made sense to convert the text in this into xkcd font.
 
@@ -143,7 +144,7 @@ ylab("winter temperature in celsius degree")+
 theme(text = element_text(size =16, family = "xkcd"))
 ```
 
-<final graph>
+![xkcd graph](assets/image/wheretolive/final_graph.png)
 
 I didn’t use xkcd theme, because I liked the background. 
 
