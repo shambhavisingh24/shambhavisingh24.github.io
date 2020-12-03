@@ -34,6 +34,7 @@ To get the city data with ICAO standard, I used this [page](https://airportcodes
 Now that we have city data, we want to acquire weather data. We use the riem package for this. We use the same code from Maëlle Salmon’s original blogpost where she uses **map_df()**, from **purrr** library, to apply **riem_measures()** on each airport code with the output being a lovely data frame!
 I checked this Wikipedia page, to see how summer and winter are defined by the India Meteorological Department. Basically, this is how they define the seasons
 -**Winter**, occurring from December to February
+
 -**Summer** lasts from March to May
 
 ```library(purrr)
