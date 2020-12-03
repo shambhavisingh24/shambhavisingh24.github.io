@@ -5,6 +5,7 @@ categories:
   - projects
 tags:
   - R
+  -xkcd
 
 ---
 
@@ -43,7 +44,8 @@ I checked this Wikipedia page, to see how summer and winter are defined by the I
 -**Summer** lasts from March to May
 
 
-```library(purrr)
+```
+library(purrr)
 summer_weather <- map_df(indian_airports$ICAO, riem_measures, date_start = "2019-03-01", date_end = "2019-05-31")
 View(summer_weather)
 winter_weather <- map_df(indian_airports$ICAO, riem_measures, date_start = "2018-12-01", date_end = "2019-02-28")
@@ -75,8 +77,11 @@ In the xkcd comic, the author uses [Humidex](https://en.wikipedia.org/wiki/Humid
 We can then calculate the humidex with the **calcHumx()** function from the comf package!
 The formula for the same is:
 
-<img src="{{ site.url }}{{ site.baseurl }}assets/image/wheretolive/formula_humidex.png" alt="">
 
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/formula_humidex.png" alt="formula">
+  <figcaption>Source: Wikipedia.</figcaption>
+</figure>
 
 The interpretation of the humidex is as follows:
 ->20–29: Little to no discomfort
@@ -128,6 +133,7 @@ geom_text_repel(aes(label=Municipality), max.iter=50000)+
 xlab("summer heat and humidity via humidex")+
 ylab("winter temperature in celsius degree")
 ```
+
 
 
 ![graph]({{ site.url }}{{ site.baseurl }}/assets/image/wheretolive/graph1.png)
