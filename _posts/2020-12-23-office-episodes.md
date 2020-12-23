@@ -9,7 +9,7 @@ tags:
   - web scraping
 
 ---
-
+[!header]({{ site.url }}{{ site.baseurl }}/assets/image/office-episodes/Screenshot 2020-12-23 at 7.24.22 PM.png)
 I have been told on numerous occasions by multiple people that if I have not watched the office then I am not living the life. I even tried to watch it once but couldn’t get past the first episode. I did not find it as funny and interesting as I was told it was. Recently, again one of my really close friends watched the series and they suggested it to me. When I told them that I had already tried watching the show, but didn’t find it funny, they told me the first season is not as good as the following ones, but that it was worth it to make it through the first season. 
 
 
@@ -26,7 +26,7 @@ You can find the code to extract the data on my github [here](https://github.com
 
 To finally answer the question, I decided to make a beeswarm plot.Using the beeswarm plot, it is quite easy to see how the data is distributed. I tried making the plot in python, but due to my novice python skills, I wasn’t able to modify the plot to my liking. I decided to take the dataset into R and create the plot there using the [ggbeeswarm](https://cran.r-project.org/package=ggbeeswarm) package.
 
---image--
+[!plot]({{ site.url }}{{ site.baseurl }}/assets/image/office-episodes/office-plot.png)
 
 Looking at the plot, we can say that the first season, with only 6 episodes was slightly less enjoyed! Further, we can see that season 8 is the least enjoyed season of the show. Now that I know the show actually gets better after season one but it gets bad in the penultimate season. Will I watch it? I don’t know! But I am quite happy that it was so simple to answer this question.
 
