@@ -100,6 +100,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "2218980695"
+    anonymize_ip: false # default
 
 category_archive:
   type: liquid
