@@ -7,7 +7,8 @@ tags:
   - R
   - python
   - web scraping
-excerpt: ""
+excerpt: "           
+                      "
 header:
   overlay_image: /assets/image/office-episodes/header.png
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
