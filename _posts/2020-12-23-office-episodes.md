@@ -17,8 +17,10 @@ This revelation by my friend about the first season not being the best one, got 
 
 
 After discussing this fact with some other friends who had already seen the show, I found that they have the same feeling about the first season. This got me wondering whether this was the general belief among the people who have watched this show. To answer this question, I downloaded IMDB ratings for the show! 
-To get the IMDB rating of the show, I used the BeautifulSoup package in python to scrape the rating from the IMDB page of The Office. I followed this wonderful DataQuest tutorial by Alex Olteanu that explains, in-depth, how to scrape over 2000 movies from IMDb, and modified it to scrape TV series episode ratings.
-The thing to keep in mind while web scraping is to understand the basic HTML structure of a single page and identify the URL structure. I found the same tutorial quite handy in understanding these.
+
+To get the IMDB rating of the show, I used the BeautifulSoup package in python to scrape the rating from the IMDB page of The Office. I followed this wonderful [DataQuest tutorial] (https://www.dataquest.io/blog/web-scraping-beautifulsoup/) by Alex Olteanu that explains, in-depth, how to scrape over 2000 movies from IMDb, and modified it to scrape TV series episode ratings.
+
+The thing to keep in mind while web scraping is to understand the basic HTML structure of a single page and identify the URL structure. I found the [same tutorial] (https://www.dataquest.io/blog/web-scraping-beautifulsoup/#identifyingtheurlstructure) quite handy in understanding these.
 
 You can find the code to extract the data on my github here. Once I had the data extracted, I made the dataframe out of it and did some general cleaning and wrangling of the data. 
 
