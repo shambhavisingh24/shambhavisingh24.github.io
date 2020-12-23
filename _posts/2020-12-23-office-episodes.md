@@ -24,7 +24,7 @@ The thing to keep in mind while web scraping is to understand the basic HTML str
 
 You can find the code to extract the data on my github [here](https://github.com/shambhavisingh24/office-episodes). Once I had the data extracted, I made the dataframe out of it and did some general cleaning and wrangling of the data. 
 
-To finally answer the question, I decided to make a beeswarm plot.Using the beeswarm plot, it is quite easy to see how the data is distributed. I tried making the plot in python, but due to my novice python skills, I wasn’t able to modify the plot to my liking. I decided to take the dataset into R and create the plot there using the ggbeeswarm package.
+To finally answer the question, I decided to make a beeswarm plot.Using the beeswarm plot, it is quite easy to see how the data is distributed. I tried making the plot in python, but due to my novice python skills, I wasn’t able to modify the plot to my liking. I decided to take the dataset into R and create the plot there using the [ggbeeswarm](https://cran.r-project.org/package=ggbeeswarm) package.
 
 --image--
 
