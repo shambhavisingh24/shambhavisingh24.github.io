@@ -18,11 +18,11 @@ This revelation by my friend about the first season not being the best one, got 
 
 After discussing this fact with some other friends who had already seen the show, I found that they have the same feeling about the first season. This got me wondering whether this was the general belief among the people who have watched this show. To answer this question, I downloaded IMDB ratings for the show! 
 
-To get the IMDB rating of the show, I used the BeautifulSoup package in python to scrape the rating from the IMDB page of The Office. I followed this wonderful [DataQuest tutorial] (https://www.dataquest.io/blog/web-scraping-beautifulsoup/) by Alex Olteanu that explains, in-depth, how to scrape over 2000 movies from IMDb, and modified it to scrape TV series episode ratings.
+To get the IMDB rating of the show, I used the BeautifulSoup package in python to scrape the rating from the IMDB page of The Office. I followed this wonderful [DataQuest tutorial](https://www.dataquest.io/blog/web-scraping-beautifulsoup/) by Alex Olteanu that explains, in-depth, how to scrape over 2000 movies from IMDb, and modified it to scrape TV series episode ratings.
 
-The thing to keep in mind while web scraping is to understand the basic HTML structure of a single page and identify the URL structure. I found the [same tutorial] (https://www.dataquest.io/blog/web-scraping-beautifulsoup/#identifyingtheurlstructure) quite handy in understanding these.
+The thing to keep in mind while web scraping is to understand the basic HTML structure of a single page and identify the URL structure. I found the [same tutorial](https://www.dataquest.io/blog/web-scraping-beautifulsoup/#identifyingtheurlstructure) quite handy in understanding these.
 
-You can find the code to extract the data on my github here. Once I had the data extracted, I made the dataframe out of it and did some general cleaning and wrangling of the data. 
+You can find the code to extract the data on my github [here](https://github.com/shambhavisingh24/office-episodes). Once I had the data extracted, I made the dataframe out of it and did some general cleaning and wrangling of the data. 
 
 To finally answer the question, I decided to make a beeswarm plot.Using the beeswarm plot, it is quite easy to see how the data is distributed. I tried making the plot in python, but due to my novice python skills, I wasn’t able to modify the plot to my liking. I decided to take the dataset into R and create the plot there using the ggbeeswarm package.
 
@@ -31,4 +31,4 @@ To finally answer the question, I decided to make a beeswarm plot.Using the bees
 Looking at the plot, we can say that the first season, with only 6 episodes was slightly less enjoyed! Further, we can see that season 8 is the least enjoyed season of the show. Now that I know the show actually gets better after season one but it gets bad in the penultimate season. Will I watch it? I don’t know! But I am quite happy that it was so simple to answer this question.
 
 
-Side Note: I also did some simple EDA on the dataset, which along with the code for creating the plot can be found here.
+Side Note: I also did some simple EDA on the dataset, which along with the code for creating the plot can be found [here](https://github.com/shambhavisingh24/office-episodes).
