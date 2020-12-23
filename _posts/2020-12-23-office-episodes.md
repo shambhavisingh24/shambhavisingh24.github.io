@@ -7,9 +7,11 @@ tags:
   - R
   - python
   - web scraping
-image:
-  path: https://github.com/shambhavisingh24/shambhavisingh24.github.io/blob/main/assets/image/office-episodes/header.png
-  thumbnail: https://github.com/shambhavisingh24/shambhavisingh24.github.io/blob/main/assets/image/office-episodes/header.png
+header:
+  overlay_image: /assets/image/office-episodes/header.png
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**marisajlivingston**](https://www.instagram.com/marisajlivingston/)"
+  
 ---
 
 I have been told on numerous occasions by multiple people that if I have not watched the office then I am not living the life. I even tried to watch it once but couldn’t get past the first episode. I did not find it as funny and interesting as I was told it was. Recently, again one of my really close friends watched the series and they suggested it to me. When I told them that I had already tried watching the show, but didn’t find it funny, they told me the first season is not as good as the following ones, but that it was worth it to make it through the first season. 
