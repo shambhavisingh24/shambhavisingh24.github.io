@@ -32,3 +32,9 @@ Looking at the plot, we can say that the first season, with only 6 episodes was 
 
 
 Side Note: I also did some simple EDA on the dataset, which along with the code for creating the plot can be found [here](https://github.com/shambhavisingh24/office-episodes).
+
+---
+
+*See you soon for a new post!*
+
+*Thanks for reading! You can always [email me](mailto:shambhavi.singh2014@gmail.com) to chat about this post - or anything else.*
