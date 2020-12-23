@@ -27,7 +27,7 @@ You can find the code to extract the data on my github [here](https://github.com
 
 To finally answer the question, I decided to make a beeswarm plot.Using the beeswarm plot, it is quite easy to see how the data is distributed. I tried making the plot in python, but due to my novice python skills, I wasn’t able to modify the plot to my liking. I decided to take the dataset into R and create the plot there using the [ggbeeswarm](https://cran.r-project.org/package=ggbeeswarm) package.
 
-[!plot]({{ site.url }}{{ site.baseurl }}/assets/image/office-episodes/office-plot.png)
+<img src="{{ site.url }}{{ site.baseurl }}/assets/image/office-episodes/office-plot.png" alt="">
 
 Looking at the plot, we can say that the first season, with only 6 episodes was slightly less enjoyed! Further, we can see that season 8 is the least enjoyed season of the show. Now that I know the show actually gets better after season one but it gets bad in the penultimate season. Will I watch it? I don’t know! But I am quite happy that it was so simple to answer this question.
 
