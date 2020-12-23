@@ -7,7 +7,9 @@ tags:
   - R
   - python
   - web scraping
-
+image:
+  path: https://github.com/shambhavisingh24/shambhavisingh24.github.io/blob/main/assets/image/office-episodes/header.png
+  thumbnail: https://github.com/shambhavisingh24/shambhavisingh24.github.io/blob/main/assets/image/office-episodes/header.png
 ---
 [!header](/assets/image/office-episodes/header.png)
 
