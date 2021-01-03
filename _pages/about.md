@@ -15,7 +15,7 @@ When I'm not working on meeting deadlines, I'm either working on [side projects]
 
 Here's some of what I'm doing these days:
 - **Current side project:** Making this website!
-- **Currently reading**: _A Suitable Boy_ by Vikram Seth(hoping to this finish this by end of this year). Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
+- **Currently reading**: _The Memory Police_ by Yoko Ogawa. Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
 - **Currently learning**: Introduction to Machine Learning, You can find the course [here](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/course/)
 
 ---------------------
