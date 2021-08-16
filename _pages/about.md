@@ -15,8 +15,8 @@ When I'm not working on meeting deadlines, I'm either working on [side projects]
 
 Here's some of what I'm doing these days:
 - **Current side project:** Making this website!
-- **Currently reading**: _Atomic Habits_ by James Clear. Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
-- **Currently learning**: Introduction to Machine Learning, You can find the course [here](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/course/)
+- **Currently reading**: _The Forty Rules of Love_ by Elif Shafak. Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
+- **Currently learning**: Introduction to Machine Learning with Python, You can find the pdf [here](http://noracook.io/Books/Python/introductiontomachinelearningwithpython.pdf)
 
 ---------------------
 
