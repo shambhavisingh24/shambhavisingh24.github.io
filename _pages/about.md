@@ -14,8 +14,8 @@ When I'm not working on meeting deadlines, I'm either working on [side projects]
 ---------------------
 
 Here's some of what I'm doing these days:
-- **Current side project:** Making this website!
-- **Currently reading**: _The Forty Rules of Love_ by Elif Shafak. Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi). 
+- **Current side project:** Suggestmeabook application!
+- **Currently reading**: _the curious incident of the dog in the nighttime_ by Mark Haddon. Find my Goodreads [here](https://www.goodreads.com/user/show/91427372-shambhavi) and my [bookstagram] (https://www.instagram.com/whatsshambhavireading/). 
 - **Currently learning**: Introduction to Machine Learning with Python, You can find the pdf [here](http://noracook.io/Books/Python/introductiontomachinelearningwithpython.pdf)
 
 ---------------------
