@@ -112,6 +112,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-year_archive:
-  type: liquid
-  path: /year/
+# year_archive:
+#   type: liquid
+#   path: /year/
