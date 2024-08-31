@@ -4,12 +4,15 @@ title: "About"
 author profile: false
 ---
 
+.
 
-I'm Shambhavi, a data analyst at Sharechat. I have done my undergrad in Mathematics from St. Stephen's College, University of Delhi. I have deep interest in data analysis and visualization. 
+Hi, I'm Shambhavi -- a data scientist with 5+ years of experience of making sense of data. I’m currently working as senior data scientist at Grab. My previous stints include ICICI Bank, EY, and Sharechat. I have done my undergrad in Mathematics from St. Stephen's College, University of Delhi. 
+
+
 
 ------------------
 
-When I'm not working on meeting deadlines, I'm either working on [side projects](https://shambhavisingh24.github.io/categories/#projects), reading, or talking to my plants. 
+I am also a documentist at shambhawethings and a_brewtiful_life, a reader,wanna–be writer and full-time mom to my two plants(rekha and sonia). I also dabble on some [side projects](https://shambhavisingh24.github.io/categories/#projects) from time to time. I would love to connect with you, email me at [hi@shambhavisingh24.github.io](shambhavi.singh2014@gmail.com)
 
 ---------------------
 
