@@ -80,6 +80,8 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shambhavisingh24"
+
+
       
 defaults:
   # _posts
@@ -87,12 +89,14 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+    sidebar:
+      nav: "posts"
   # _pages
   - scope:
       path: "_pages"
