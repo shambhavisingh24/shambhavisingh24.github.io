@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: archive
 ---
-
-{{ content }}
+ -->
+<!-- {{ content }} -->
 
 <!-- <ul class="taxonomy__index">
   {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
@@ -29,21 +29,24 @@ layout: archive
   </section>
 {% endfor %} -->
 
----
+<!-- ---
 layout: single
+title: Blog Archive
+permalink: /posts/
+--- -->
+
+---
+layout: archive
 title: Blog Archive
 permalink: /posts/
 ---
 
-<!-- Include theme header -->
-{% include header.html %}
+<!-- Page Title -->
+<header class="page-header">
+  <h1 class="page-title">{{ page.title }}</h1>
+</header>
 
 <main class="archive">
-  <!-- Page Title -->
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
-  </header>
-
   <!-- Post List -->
   <div class="post-list">
     {% for post in site.posts %}
