@@ -95,8 +95,8 @@ defaults:
       comments: true
       share: true
       related: true
-    sidebar:
-      nav: "posts"
+      sidebar: false
+      
   # _pages
   - scope:
       path: "_pages"
