@@ -29,11 +29,31 @@ layout: archive
   </section>
 {% endfor %} -->
 
-<div class="post-list">
-  {% for post in site.posts %}
-    <article class="post">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-    </article>
-  {% endfor %}
-</div>
+---
+layout: single
+title: Blog Archive
+permalink: /posts/
+---
+
+<!-- Include theme header -->
+{% include header.html %}
+
+<main class="archive">
+  <!-- Page Title -->
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+  </header>
+
+  <!-- Post List -->
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</main>
+
+<!-- Include theme footer -->
+{% include footer.html %}
