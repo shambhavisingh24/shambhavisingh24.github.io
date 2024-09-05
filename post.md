@@ -1,5 +1,5 @@
 ---
 layout: single
 title: "Posts"
-permalink: /posts/
+permalink: /pages/
 ---
