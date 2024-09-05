@@ -8,8 +8,7 @@ layout: default
     {% for post in site.posts %}
       <article class="post-summary">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        <a href="{{ post.url }}" class="read-more">Read More</a>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}, Category: {{ post.categories | join: ', ' }}</p>
       </article>
     {% endfor %}
   </div>
@@ -29,19 +28,14 @@ layout: default
     font-size: 1.5em;
     margin: 0;
   }
-  .post-summary p {
-    font-size: 1em;
-    color: #555;
+  .post-meta {
+    font-size: 0.9em; /* Smaller font size */
+    color: #888; /* Grey color */
+    font-style: italic; /* Italicize text */
+    margin-top: 5px;
   }
   .read-more {
     color: #00050a;
     text-decoration: none;
   }
-
-  .container {
-  max-width: 500px; /* Adjust to match the post page */
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 </style>
