@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="posts">
-  <h1>Blog</h1> <!-- Changed from "Posts" to "Blog" -->
+  <h1 style="font-style: italic;">Blog</h1> <!-- Changed to italic -->
   <div class="post-list">
     {% for post in site.posts %}
       <article class="post-summary">
-        <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2> <!-- Added class "post-title" -->
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, shelved under: {{ post.categories | join: ', ' }}</p>
+        <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, Shelved under: {{ post.categories | join: ', ' }}</p>
       </article>
     {% endfor %}
   </div>
@@ -21,8 +21,8 @@ layout: default
     text-align: center; /* Center-aligns all text within the .posts container */
   }
   .post-summary {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 10px; /* Reduced padding to decrease space between post titles */
+    margin-bottom: 10px;  /* Reduced margin to decrease space between post titles */
   }
   .post-summary h2 {
     font-size: 1.2em; /* Smaller font size for post titles */
@@ -33,9 +33,9 @@ layout: default
     color: inherit; /* Keeps the default color */
   }
   .post-meta {
-    font-size: 0.8em; /* Smaller font size */
+    font-size: 0.9em; /* Smaller font size */
     color: #888; /* Grey color */
-    /*font-style: italic; /* Italicize text */*/
+    font-style: italic; /* Italicize text */
     margin-top: 5px;
   }
   .read-more {
