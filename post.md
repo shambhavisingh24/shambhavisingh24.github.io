@@ -1,11 +1,5 @@
 ---
-layout: single
-title: "Posts"
+layout: posts
+title: "All Posts"
 permalink: /posts/
 ---
-
-# Blog Posts
-
-{% for post in site.posts %}
-  - [{{ post.title }}]({{ post.url }})
-{% endfor %}
