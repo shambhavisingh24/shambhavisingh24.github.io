@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="posts">
-  <h1>Posts</h1>
+  <h1>Blog</h1> <!-- Changed from "Posts" to "Blog" -->
   <div class="post-list">
     {% for post in site.posts %}
       <article class="post-summary">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, Shelved under: {{ post.categories | join: ', ' }}</p>
+        <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2> <!-- Added class "post-title" -->
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, shelved under: {{ post.categories | join: ', ' }}</p>
       </article>
     {% endfor %}
   </div>
@@ -25,13 +25,17 @@ layout: default
     margin-bottom: 20px;
   }
   .post-summary h2 {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Smaller font size for post titles */
     margin: 0;
   }
+  .post-title {
+    text-decoration: none; /* Removes underline from post titles */
+    color: inherit; /* Keeps the default color */
+  }
   .post-meta {
-    font-size: 0.9em; /* Smaller font size */
+    font-size: 0.8em; /* Smaller font size */
     color: #888; /* Grey color */
-    font-style: italic; /* Italicize text */
+    /*font-style: italic; /* Italicize text */*/
     margin-top: 5px;
   }
   .read-more {
