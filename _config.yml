@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: shambhavi
+title: Shambhavi Singh
 email: shambhavi.singh2014@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal Website
@@ -80,8 +80,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shambhavisingh24"
-
-
       
 defaults:
   # _posts
@@ -95,8 +93,6 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar: false
-      
   # _pages
   - scope:
       path: "_pages"
@@ -104,11 +100,11 @@ defaults:
     values:
       layout: single
       author_profile: false
-# analytics:
-#   provider: "google-gtag"
-#   google:
-#     tracking_id: "2218980695"
-#     anonymize_ip: false # default
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "2218980695"
+    anonymize_ip: false # default
 
 category_archive:
   type: liquid
@@ -116,6 +112,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# year_archive:
-#   type: liquid
-#   path: /year/
