@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="posts">
+  <h1>Posts</h1>
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="post-summary">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        <a href="{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .posts {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .post-summary {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .post-summary h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .post-summary p {
+    font-size: 1em;
+    color: #555;
+  }
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+  }
+</style>
