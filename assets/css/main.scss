@@ -5,6 +5,56 @@
 
 $link-color: #000000;
 
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Custom styles for the homepage */
+.homepage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.homepage .introduction {
+  margin-bottom: 40px;
+}
+
+.homepage .introduction h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333; /* Adjust to fit your theme */
+}
+
+.homepage .introduction p {
+  font-size: 1.2em;
+  color: #555; /* Adjust to fit your theme */
+}
+
+.homepage .sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.homepage .sections section {
+  background: #f9f9f9; /* Light background for section blocks */
+  padding: 20px;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+}
+
+.homepage .sections section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.homepage .sections section h2 a {
+  text-decoration: none;
+  color: #000000; /* Adjust to your theme's primary color */
+}
+
+.homepage .sections section p {
+  color: #777;
+  font-size: 1em;
+}
