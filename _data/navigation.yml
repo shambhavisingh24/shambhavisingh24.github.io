@@ -1,9 +1,18 @@
+# main:
+#   - title: "work"
+#     url: /posts/
+#   - title: "sketchbook"
+#     url: /sketchbook/
+#   # - title: "Tags"
+#   #   url: /tags/
+#   - title: "about"
+#     url: /about/
 main:
-  - title: "blog"
+  - title: "work"
     url: /posts/
   - title: "sketchbook"
     url: /sketchbook/
   # - title: "Tags"
   #   url: /tags/
-  - title: "about"
-    url: /about/
+  - title: "hello@shambhavisingh.com"
+    url: "mailto:shambhavi.singh2014@gmail.com"
