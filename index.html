@@ -81,6 +81,28 @@ layout: single
   </div>
 </div>
 
+<!-- Writing Section -->  
+<div class="writing-section">
+  <h2 style="font-style: italic;">Writing</h2>
+
+  <div class="writing-list">
+    <div class="writing-item">
+      <h3><a href="/writing/post-title-1" target="_blank">Post Title 1</a></h3>
+      <p><em>Published: January 2024</em></p>
+      <p>Short description or excerpt of the post goes here...</p>
+    </div>
+    <div class="writing-item">
+      <h3><a href="/writing/post-title-2" target="_blank">Post Title 2</a></h3>
+      <p><em>Published: February 2024</em></p>
+      <p>Short description or excerpt of the post goes here...</p>
+    </div>
+    <div class="writing-item">
+      <h3><a href="/writing/post-title-3" target="_blank">Post Title 3</a></h3>
+      <p><em>Published: March 2024</em></p>
+      <p>Short description or excerpt of the post goes here...</p>
+    </div>
+  </div>
+</div>
 <!-- Style and Script -->
 <style>
   .work-section {
@@ -153,6 +175,50 @@ layout: single
   }
 
   a:hover {
+    text-decoration: underline;
+  }
+</style>
+<!-- Style and Script for writing -->
+<style>
+  .writing-section {
+    margin-top: 3em;
+  }
+
+  .writing-section h2 {
+    font-style: italic;
+    font-weight: normal; /* No bold effect */
+    margin-bottom: 1em;
+  }
+
+  .writing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .writing-item {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .writing-item h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+
+  .writing-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .writing-item a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .writing-item a:hover {
     text-decoration: underline;
   }
 </style>
