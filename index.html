@@ -17,3 +17,134 @@ layout: single
   <a href="https://shambhavisingh24.github.io/sketchbook/" target="_blank">a wanna-be artist</a>, and a full-time plant mom. I love receiving emails at 
   <a href="mailto:shambhavi.singh2014@gmail.com">hey@shambhavi.com</a>.
 </p>
+
+<!-- Work Section -->
+<div class="work-section">
+  <h2 style="font-style: italic;">Work</h2>
+
+  <!-- Buttons -->
+  <div class="work-buttons">
+    <button class="work-btn" onclick="showContent('professional')">Professional</button>
+    <button class="work-btn" onclick="showContent('projects')">Projects</button>
+    <button class="work-btn" onclick="showContent('others')">Others</button>
+  </div>
+
+  <!-- Content Sections -->
+  <div id="professional" class="work-content">
+    <!-- Latest Project -->
+    <div class="work-item">
+      <h3>Latest Professional Project</h3>
+      <div class="project-rectangle">
+        <p><strong>Project Title:</strong>One Bank One Flow</p>
+        <p>description </p>
+      </div>
+    </div>
+    <!-- Smaller Projects -->
+    <div class="other-projects">
+      <div class="project-item">
+        <p>Previous Project 1</p>
+      </div>
+      <div class="project-item">
+        <p>Previous Project 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects" class="work-content">
+    <div class="work-item">
+      <h3>Project 1</h3>
+      <div class="project-rectangle">
+        <p><strong>Project Title:</strong> Data Visualization for XYZ</p>
+        <p>Description of project 1...</p>
+      </div>
+    </div>
+    <div class="work-item">
+      <h3>Project 2</h3>
+      <div class="project-rectangle">
+        <p><strong>Project Title:</strong> Predictive Analytics for ABC</p>
+        <p>Description of project 2...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="others" class="work-content">
+    <div class="work-item">
+      <h3>Other Work 1</h3>
+      <p>Other work details here...</p>
+    </div>
+    <div class="work-item">
+      <h3>Other Work 2</h3>
+      <p>More details...</p>
+    </div>
+  </div>
+</div>
+
+<!-- Style and Script -->
+<style>
+  .work-section {
+    margin-top: 2em;
+  }
+
+  .work-buttons {
+    margin-bottom: 1em;
+  }
+
+  .work-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .work-btn:hover {
+    background-color: #45a049;
+  }
+
+  .work-content {
+    display: none;
+  }
+
+  .work-item {
+    margin-bottom: 20px;
+  }
+
+  .project-rectangle {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-item {
+    flex: 1 1 45%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+</style>
+
+<script>
+  function showContent(section) {
+    const contents = document.querySelectorAll('.work-content');
+    contents.forEach(content => content.style.display = 'none');
+    
+    const activeContent = document.getElementById(section);
+    if (activeContent) {
+      activeContent.style.display = 'block';
+    }
+  }
+
+  // Show the 'professional' section by default
+  showContent('professional');
+</script>
