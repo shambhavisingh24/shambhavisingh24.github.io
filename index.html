@@ -71,18 +71,16 @@ layout: single
   <h2 style="font-style: italic;">Writing</h2>
 
   <div class="writing-list">
-    {% for post in site.posts %}
-      {% if post.categories contains "writing" %}
-        <div class="writing-item">
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <p><em>Published: {{ post.date | date: "%B %d, %Y" }}</em></p>
-          <p>{{ post.excerpt }}</p>
-        </div>
-      {% endif %}
-    {% endfor %}
+  {% assign latest_posts = site.posts | where: "category", "writing" | slice: 0, 2 %}
+  {% for post in latest_posts %}
+  <div class="writing-item">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><em>Published: {{ post.date | date: "%B %Y" }}</em></p>
+    <p>{{ post.excerpt | truncatewords: 20 }}</p>
   </div>
+  {% endfor %}
 </div>
-
+  </div>
 <!-- JavaScript for Work Buttons -->
 <script>
   function showContent(section) {
@@ -112,95 +110,40 @@ layout: single
 
 <!-- Style and Script -->
 ,<style>
-/* General Section Styling */
+/* General Section Styling (Remove Boxes) */
 .work-section, .writing-section {
   margin: 2em 0;
-  padding: 1em;
-  background-color: #f9f9f9;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  padding: 1em 0;
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
 }
 
+/* Titles Alignment */
 .work-section h2, .writing-section h2 {
   font-style: italic;
   font-size: 1.8em;
   color: #333;
   margin-bottom: 1em;
-  text-align: center;
+  text-align: left; /* Left alignment */
 }
 
-/* Buttons for Work Section */
+/* Buttons Alignment */
 .work-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Align to the left */
   gap: 10px;
   margin-bottom: 1em;
 }
 
-.work-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.work-btn:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.work-btn.selected {
-  background-color: #0066cc;
-  color: #fff;
-  border-color: #005bb5;
-}
-
-/* Work Content Section */
-.work-content {
-  display: none;
-  animation: fadeIn 0.5s ease;
-}
-
-.work-item {
-  margin-bottom: 1.5em;
-  padding: 1em;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.work-item h3 {
-  font-size: 1.2em;
-  color: #333;
-}
-
-.work-item p {
-  font-size: 14px;
-  color: #666;
-}
-
-.work-item a {
-  text-decoration: none;
-  color: #0066cc;
-}
-
-.work-item a:hover {
-  text-decoration: underline;
-}
-
-/* Writing Section Styling */
+/* Writing Section Latest Posts Side-by-Side */
 .writing-list {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .writing-item {
+  flex: 1 1 calc(50% - 20px); /* Two items per row */
   padding: 1em;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -208,33 +151,10 @@ layout: single
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.writing-item h3 {
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.writing-item p {
-  font-size: 14px;
-  margin: 0;
-  color: #666;
-}
-
-.writing-item a {
-  text-decoration: none;
-  color: #0066cc;
-}
-
-.writing-item a:hover {
-  text-decoration: underline;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .writing-item {
+    flex: 1 1 100%; /* Full width on smaller screens */
   }
 }
 </style>
