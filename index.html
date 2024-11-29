@@ -17,6 +17,7 @@ layout: single
   <a href="https://shambhavisingh24.github.io/sketchbook/" target="_blank"><u>a wanna-be artist</u></a>, and a full-time plant mom. I love receiving emails at 
   <a href="mailto:shambhavi.singh2014@gmail.com"><u>hey@shambhavi.com</u></a>.
 </p>
+
 <!-- Work Section -->
 <div class="work-section">
   <h2 style="font-style: italic;">Work</h2>
@@ -71,16 +72,17 @@ layout: single
   <h2 style="font-style: italic;">Writing</h2>
 
   <div class="writing-list">
-  {% assign latest_posts = site.posts | where: "category", "writing" | slice: 0, 2 %}
-  {% for post in latest_posts %}
-  <div class="writing-item">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><em>Published: {{ post.date | date: "%B %Y" }}</em></p>
-    <p>{{ post.excerpt | truncatewords: 20 }}</p>
+    {% assign latest_posts = site.posts | where: "categories", "writing" | slice: 0, 2 %}
+    {% for post in latest_posts %}
+    <div class="writing-item">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p><em>Published: {{ post.date | date: "%B %Y" }}</em></p>
+      <p>{{ post.excerpt | truncatewords: 20 }}</p>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
-  </div>
+
 <!-- JavaScript for Work Buttons -->
 <script>
   function showContent(section) {
@@ -108,8 +110,8 @@ layout: single
   });
 </script>
 
-<!-- Style and Script -->
-,<style>
+<!-- CSS -->
+<style>
 /* General Section Styling (Remove Boxes) */
 .work-section, .writing-section {
   margin: 2em 0;
@@ -133,6 +135,25 @@ layout: single
   justify-content: flex-start; /* Align to the left */
   gap: 10px;
   margin-bottom: 1em;
+}
+
+.work-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.work-btn:hover {
+  background-color: #D3FFC5; /* Green background on hover */
+}
+
+.work-btn.selected {
+  background-color: #D3FFC5; /* Green background for selected button */
+  color: #333; /* Keep text color dark */
 }
 
 /* Writing Section Latest Posts Side-by-Side */
