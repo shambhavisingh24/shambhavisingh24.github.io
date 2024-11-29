@@ -111,121 +111,130 @@ layout: single
 </script>
 
 <!-- Style and Script -->
-<style>
-  .work-section {
-    margin-top: 2em;
-  }
+,<style>
+/* General Section Styling */
+.work-section, .writing-section {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
 
-  .work-buttons {
-    margin-bottom: 1em;
-  }
+.work-section h2, .writing-section h2 {
+  font-style: italic;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 1em;
+  text-align: center;
+}
 
-  .work-btn {
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: transparent; /* Removed green background */
-    color: #333; /* Dark text for the button */
-    border: 2px solid #333; /* Border to show the button's outline */
-    border-radius: 5px;
-  }
+/* Buttons for Work Section */
+.work-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1em;
+}
 
-  .work-btn:hover {
-    background-color: #f0f0f0; /* Light background on hover */
-  }
+.work-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  .work-btn.selected {
-    background-color: #D3FFC5; /* Pink color for selected button */
-    color: #333; /* Keep text color dark for contrast */
-  }
+.work-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
 
-  .work-content {
-    display: none;
-  }
+.work-btn.selected {
+  background-color: #0066cc;
+  color: #fff;
+  border-color: #005bb5;
+}
 
-  .work-item {
-    margin-bottom: 20px;
-  }
+/* Work Content Section */
+.work-content {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
 
-  .project-rectangle {
-    background-color: transparent; /* No grey background */
-    padding: 15px;
-    border-radius: 8px;
-    border: 2px solid #ddd; /* Light border for the rectangle */
-    margin-bottom: 10px;
-  }
+.work-item {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .other-projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+.work-item h3 {
+  font-size: 1.2em;
+  color: #333;
+}
 
-  .project-item {
-    flex: 1 1 45%;
-    background-color: transparent; /* No background */
-    padding: 10px;
-    border: 2px solid #ddd; /* Border to make the smaller projects stand out */
-    border-radius: 8px;
-    margin-top: 10px;
-  }
+.work-item p {
+  font-size: 14px;
+  color: #666;
+}
 
-  .work-section h2 {
-    font-style: italic; /* Italicize the "Work" title */
-    font-weight: normal; /* Remove the bold effect */
-  }
+.work-item a {
+  text-decoration: none;
+  color: #0066cc;
+}
 
-  a {
-    text-decoration: none;
-    color: #333;
-  }
+.work-item a:hover {
+  text-decoration: underline;
+}
 
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
-<!-- Style and Script for writing -->
-<style>
-  .writing-section {
-    margin-top: 3em;
-  }
+/* Writing Section Styling */
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 
-  .writing-section h2 {
-    font-style: italic;
-    font-weight: normal; /* No bold effect */
-    margin-bottom: 1em;
-  }
+.writing-item {
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .writing-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.writing-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
 
-  .writing-item {
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
+.writing-item p {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+}
 
-  .writing-item h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-  }
+.writing-item a {
+  text-decoration: none;
+  color: #0066cc;
+}
 
-  .writing-item p {
-    margin: 0;
-    font-size: 14px;
-  }
+.writing-item a:hover {
+  text-decoration: underline;
+}
 
-  .writing-item a {
-    text-decoration: none;
-    color: #333;
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  .writing-item a:hover {
-    text-decoration: underline;
+  to {
+    opacity: 1;
   }
+}
 </style>
