@@ -86,6 +86,32 @@ layout: single
   </div>
 </div>
 
+<!-- JavaScript for Work Buttons -->
+<script>
+  function showContent(section) {
+    // Hide all content sections
+    document.querySelectorAll('.work-content').forEach(content => {
+      content.style.display = 'none';
+    });
+
+    // Show the selected section
+    const selectedContent = document.getElementById(section);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+
+    // Update button styles
+    document.querySelectorAll('.work-btn').forEach(button => {
+      button.classList.remove('selected');
+    });
+    document.querySelector(`.work-btn[onclick="showContent('${section}')"]`).classList.add('selected');
+  }
+
+  // Show the first section by default
+  document.addEventListener('DOMContentLoaded', () => {
+    showContent('professional'); // Default to "Professional"
+  });
+</script>
 
 <!-- Style and Script -->
 <style>
