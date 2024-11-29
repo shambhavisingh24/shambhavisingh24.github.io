@@ -2,7 +2,7 @@
 title: "Hello World!"
 date: 2020-12-01T15:34:30-04:00
 categories:
-  - general
+  - writing
 tags:
   - update
 
