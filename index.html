@@ -30,7 +30,6 @@ layout: single
 
   <!-- Content Sections -->
   <div id="professional" class="work-content">
-    <h3>Professional Work</h3>
     {% for post in site.posts %}
       {% if post.categories contains "work" %}
         <div class="work-item">
@@ -43,7 +42,6 @@ layout: single
   </div>
 
   <div id="projects" class="work-content">
-    <h3>Projects</h3>
     {% for post in site.posts %}
       {% if post.categories contains "projects" %}
         <div class="work-item">
@@ -56,7 +54,6 @@ layout: single
   </div>
 
   <div id="others" class="work-content">
-    <h3>Other Work</h3>
     {% for post in site.posts %}
       {% if post.categories contains "others" %}
         <div class="work-item">
